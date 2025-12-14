@@ -11,9 +11,11 @@
 
 <div align="center">
 
-[**[ArXiv Paper]**](#) | [**[Automated Extraction]**](../MaGRoad-main/README.md) | [**[WildRoad Dataset]**](#)
+[**[ArXiv Paper]**](#) | [**[Automated Extraction]**](https://github.com/xiaofei-guan/MaGRoad) | [**[WildRoad Dataset]**](#)
 
 </div>
+
+This repository contains the official implementation of the **Interactive Algorithm** and **Annotation Tool** from the paper: **Beyond Endpoints: Path-Centric Reasoning for Vectorized Off-Road Network Extraction**.
 
 ## 📖 Introduction
 
@@ -39,7 +41,7 @@ Compared to traditional manual plotting (e.g., QGIS), MaGRoad-Prompt significant
 
 | **Manual Annotation (QGIS)** | **Interactive Annotation (Ours)** |
 |:----------------------------:|:---------------------------------:|
-| <img src="assets/qgis_manual.gif" width="100%" alt="Manual"/> | <img src="assets/interactive.gif" width="100%" alt="Interactive"/> |
+| <img src="assets/qgis_manual.gif" width="91%" alt="Manual"/> | <img src="assets/interactive.gif" width="100%" alt="Interactive"/> |
 
 ### Diverse Scenarios
 
@@ -86,7 +88,7 @@ npm install # npm==10.8.2
 
 ### 2. Model Preparation
 
-Download the provided open-source checkpoint from [**here**](https://drive.google.com/drive/folders/1Z9lJIhmhaQBLOzN2WlfwUYLHPUaFH4EZ?usp=sharing) and place it under `./app/backend/app/models/weights`:
+Download the provided open-source checkpoint from [**here**](https://drive.google.com/file/d/1eOEcR7LRm8jBw6utUCPccjj4z-fHRou6/view?usp=sharing) and place it under `./app/backend/app/models/weights`:
 
 ```bash
 mkdir -p app/backend/app/models/weights
