@@ -1,0 +1,64 @@
+/* Custom scrollbar styles for control panel */
+.controlPanel {
+  /* Custom scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #cbd5e1 #f8fafc; /* thumb color | track color for Firefox */
+}
+
+/* WebKit scrollbar styling */
+.controlPanel::-webkit-scrollbar {
+  width: 6px; /* Make scrollbar thinner */
+}
+
+.controlPanel::-webkit-scrollbar-track {
+  background: #f8fafc; /* Light gray track background */
+  border-radius: 3px;
+}
+
+.controlPanel::-webkit-scrollbar-thumb {
+  background: #cbd5e1; /* Gray thumb color */
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+.controlPanel::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8; /* Darker gray on hover */
+}
+
+.controlPanel::-webkit-scrollbar-thumb:active {
+  background: #64748b; /* Even darker when active/dragging */
+}
+
+/* Hide scrollbar corner when both scrollbars are present */
+.controlPanel::-webkit-scrollbar-corner {
+  background: transparent;
+} 
+
+/* Specific styles for prompt list scrollbar */
+.promptListScroll {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.promptListScroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.promptListScroll::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 2px;
+}
+
+.promptListScroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 2px;
+  transition: background-color 0.15s ease;
+}
+
+.promptListScroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.promptListScroll::-webkit-scrollbar-thumb:active {
+  background: #64748b;
+} 

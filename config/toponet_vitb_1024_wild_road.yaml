@@ -1,0 +1,67 @@
+# dataset config:
+  # kp prompt
+DATASET_NAME: "wildroad"
+MAX_KP_NUM: 10
+KP_SAMPLE_PROB: 1.0
+NEGATIVE_SAMPLE_RATIO: 1.0
+NEGATIVE_SAFE_RADIUS: 50.0 # 100.0
+  # graph label
+PATCH_SIZE: 1024
+TOPO_SAMPLE_NUM: 128
+ITSC_NMS_RADIUS: 50
+ROAD_NMS_RADIUS: 50 
+NEIGHBOR_RADIUS: 200 
+MAX_NEIGHBOR_QUERIES: 8 
+SUBDIVIDE_RESOLUTION: 20
+INTERESTING_RADIUS: 100
+INTR_SAMPLE_WEIGHT: 1.0
+NOISE_SCALE: 3.0
+
+# dataloader config
+BATCH_SIZE: 4 # 4
+DATA_WORKER_NUM: 0
+
+# model config
+NO_SAM: False
+USE_PRETRAIN: True
+SAM_VERSION: 'vit_b'
+TOPONET: "magtoponet" # "transformer", "magtoponet"
+TOPONET_VERSION: 'normal' # for ablation study, no_offset, no_tgt_features, transformer, no_features
+NUM_INTERPOLATIONS: 32
+# new topo net config
+USE_POINT_FEATURES: False
+USE_PATH_FEATURES: True
+USE_EDGE_BIAS: True
+
+SAM_CKPT_PATH: 'ckpt/sam_vit_b_01ec64.pth'
+# PATCH_SIZE: 1024
+FREEZE_ENCODER: False
+ENCODER_LR_FACTOR: 0.1
+DECODER_LR_FACTOR: 1.0
+TOPO_NET_LR_FACTOR: 0.1
+ENCODER_LORA: False
+USE_SAM_DECODER: False
+DIST_MAP_NORM_R: 10
+USE_DISKS: True
+# topology network
+
+# loss config
+BCE_POS_WEIGHT: 10.0
+DICE_SMOOTH: 0.6
+# KP_WEIGHT: 0.6667
+# ROAD_WEIGHT: 0.3333
+
+# train config
+TRAIN_EPOCHS: 20
+BASE_LR: 0.001
+OPTIMIZER: "AdamW"
+
+# test config
+# RUN_TEST: False
+# TEST_CKPT_PATH: "~/sam/new_dataset_exp/data_100/version_2/checkpoints/best_topo_acc-epoch=17-val_epoch_topo_acc=0.973.ckpt"
+
+ITSC_THRESHOLD: 0.77
+ROAD_THRESHOLD: 0.72
+TOPO_THRESHOLD: 0.46
+ITSC_AREA_THRESHOLD: 100
+ROAD_AREA_THRESHOLD: 200

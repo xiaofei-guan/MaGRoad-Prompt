@@ -1,0 +1,45 @@
+# kp prompt
+MAX_KP_NUM: 10 # Max prompts to consider from user, can be adjusted
+KP_SAMPLE_PROB: 1.0 # For inference, we use all provided prompts
+NEGATIVE_SAMPLE_RATIO: 1.0 # Not directly used for inference from user prompts
+NEGATIVE_SAFE_RADIUS: 100.0 # Might be used by graph_extraction if it has negative sampling logic
+# graph label (These are more for training, but some thresholds might be used in graph_extraction)
+PATCH_SIZE: 1024
+TOPO_SAMPLE_NUM: 64
+ITSC_NMS_RADIUS: 50
+ROAD_NMS_RADIUS: 50
+NEIGHBOR_RADIUS: 200
+MAX_NEIGHBOR_QUERIES: 8
+SUBDIVIDE_RESOLUTION: 20 # 25
+INTERESTING_RADIUS: 100
+INTR_SAMPLE_WEIGHT: 2.0 # 0.9
+
+# model config
+NO_SAM: False # Inference assumes SAM components are used as per SegMaskModel
+USE_PRETRAIN: True # Assumes model weights are loaded
+SAM_VERSION: 'vit_b' # Or vit_l, vit_h, must match loaded checkpoint
+PROMPT_ENCODER_TYPE: "dist_map" # "points", "dist_map"
+TOPONET: "magtoponet" 
+TOPONET_VERSION: 'normal'
+NUM_INTERPOLATIONS: 32
+# new topo net config
+USE_POINT_FEATURES: False
+USE_PATH_FEATURES: True
+USE_EDGE_BIAS: True
+
+# PATCH_SIZE: 1024
+FREEZE_ENCODER: True # For inference, encoder is not trained
+ENCODER_LR_FACTOR: 0.1
+DECODER_LR_FACTOR: 1.0
+ENCODER_LORA: False # Inference typically doesn't use LoRA training specific flags
+USE_SAM_DECODER: False # IMPORTANT: Set this based on how SegMaskModel was trained and if DistMaps are needed
+DIST_MAP_NORM_R: 10
+USE_DISKS: True
+
+
+ROAD_EXTRACTION_MODEL_CKPT_PATH: "./app/models/weights/best_topo_acc-epoch=16-val_epoch_topo_acc=0.968.ckpt"
+ITSC_THRESHOLD: 0.77
+ROAD_THRESHOLD: 0.72
+TOPO_THRESHOLD: 0.46
+ITSC_AREA_THRESHOLD: 50
+ROAD_AREA_THRESHOLD: 200
