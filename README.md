@@ -11,7 +11,7 @@
 
 <div align="center">
 
-[**[ArXiv Paper]**](#) | [**[Automated Extraction]**](https://github.com/xiaofei-guan/MaGRoad) | [**[WildRoad Dataset]**](#)
+[**[ArXiv Paper]**](https://arxiv.org/abs/2512.10416v2) | [**[Automated Extraction]**](https://github.com/xiaofei-guan/MaGRoad) | [**[WildRoad Dataset]**](#)
 
 </div>
 
@@ -160,7 +160,7 @@ If you use MaGRoad-Prompt or the WildRoad dataset in your research, please cite:
 @article{magroad2025,
   title={Beyond Endpoints: Path-Centric Reasoning for Vectorized Off-Road Network Extraction},
   author={Guan, Wenfei and Mei, Jilin and Shen, Tong and Wu, Xumin and Wang, Shuo and Min, Cheng and Hu, Yu},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2512.10416},
   year={2025}
 }
 ```
