@@ -53,8 +53,8 @@ Compared to traditional manual plotting (e.g., QGIS), MaGRoad-Prompt significant
 
 <table>
   <tr>
-    <td align="center"><video src="https://github.com/user-attachments/assets/0b0165cb-5685-44f6-a321-ea9b2fe0ce2b" controls="controls"></video></td>
-    <td align="center"><video src="https://github.com/user-attachments/assets/137a5141-8c66-46ac-b049-7b5dd5a45213" controls="controls"></video></td>
+    <td align="center"><video src="https://github.com/user-attachments/assets/8a797ddd-97c0-4c43-9066-2318a1dc8ff8" controls="controls"></video></td>
+    <td align="center"><video src="https://github.com/user-attachments/assets/48c428fa-857e-44b4-b662-109b5111874e" controls="controls"></video></td>
   </tr>
 </table>
 
@@ -62,9 +62,9 @@ Compared to traditional manual plotting (e.g., QGIS), MaGRoad-Prompt significant
 
 <table>
   <tr>
-    <td align="center"><video src="https://github.com/user-attachments/assets/ea9a8d7c-1ebb-468c-bb2d-10b7dfe415c2" controls="controls"></video></td>
-    <td align="center"><video src="https://github.com/user-attachments/assets/a46214cd-9919-4742-9be5-716741c6f651" controls="controls"></video></td>
-    <td align="center"><video src="https://github.com/user-attachments/assets/53989c54-e761-449d-b924-fd9db32d4291" controls="controls"></video></td>
+    <td align="center"><video src="https://github.com/user-attachments/assets/5d01ccfa-119f-4af5-838f-807a459fd90f" controls="controls"></video></td>
+    <td align="center"><video src="https://github.com/user-attachments/assets/906566e7-c05a-41e1-b0a7-f86254b4f068" controls="controls"></video></td>
+    <td align="center"><video src="https://github.com/user-attachments/assets/b9f0da9a-3884-4a0d-98c7-610972785d54" controls="controls"></video></td>
   </tr>
 </table>
 
