@@ -1,4 +1,8 @@
-<h1 align="center">MaGRoad-Prompt</h1>
+<h1 align="center">
+  MaGRoad-Prompt
+  <br>
+  <small>The First Interactive Road Network Annotation Tool</small>
+</h1>
 
 <div align="center">
 
@@ -47,18 +51,22 @@ Compared to traditional manual plotting (e.g., QGIS), MaGRoad-Prompt significant
 
 **Satellite Imagery**: The model handles complex large-scale road networks effectively.
 
-<div align="center">
-  <img src="assets/sat2.gif" width="49%" alt="Satellite Demo 1"/>
-  <img src="assets/sat4.gif" width="49%" alt="Satellite Demo 2"/>
-</div>
+<table>
+  <tr>
+    <td align="center"><video src="https://github.com/user-attachments/assets/0b0165cb-5685-44f6-a321-ea9b2fe0ce2b" controls="controls"></video></td>
+    <td align="center"><video src="https://github.com/user-attachments/assets/137a5141-8c66-46ac-b049-7b5dd5a45213" controls="controls"></video></td>
+  </tr>
+</table>
 
 **UAV Generalization**: Although trained only on satellite imagery, the model demonstrates strong generalization capabilities on UAV images.
 
-<div align="center">
-  <img src="assets/uav1.gif" width="32%" alt="UAV Demo 1"/>
-  <img src="assets/uav2.gif" width="32%" alt="UAV Demo 2"/>
-  <img src="assets/uav3.gif" width="32%" alt="UAV Demo 3"/>
-</div>
+<table>
+  <tr>
+    <td align="center"><video src="https://github.com/user-attachments/assets/ea9a8d7c-1ebb-468c-bb2d-10b7dfe415c2" controls="controls"></video></td>
+    <td align="center"><video src="https://github.com/user-attachments/assets/a46214cd-9919-4742-9be5-716741c6f651" controls="controls"></video></td>
+    <td align="center"><video src="https://github.com/user-attachments/assets/53989c54-e761-449d-b924-fd9db32d4291" controls="controls"></video></td>
+  </tr>
+</table>
 
 ---
 
